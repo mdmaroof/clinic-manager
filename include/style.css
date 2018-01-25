@@ -19,3 +19,8 @@ li {
     display: inline;
     margin-right: 10px;
 }
+
+.card-text {
+    font-size: 15px;
+    font-weight: 100;
+}

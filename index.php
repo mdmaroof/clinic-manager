@@ -78,7 +78,6 @@ Add Profile
 <!-- Modal close -->
 </li>
 
-<li><a class="btn btn-primary" href="#">Log In</a></li>
 </ul>
 </div>
 </div>
@@ -92,12 +91,18 @@ Add Profile
 
 <div class="container">
 
-<div class="alert alert-danger" role="alert">
+
 <?php
+
 $msg=$_GET['message'];
+if (!empty( $msg )){
+echo "<div class='alert alert-danger' role='alert'>";
 echo $msg;
+echo"</div>";
+}
+
 ?>
-</div>
+
 
   <?php
 $mysqli = mysqli_connect("localhost", "root", "root", "preleaf");
@@ -145,9 +150,6 @@ else{
   </tbody>
 </table>
 </div>
-
-
-
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

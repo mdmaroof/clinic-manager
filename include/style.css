@@ -1,0 +1,21 @@
+html,
+body {
+    overflow-x: hidden;
+    background: #fff;
+    font-family: 'Open Sans';
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
